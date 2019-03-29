@@ -53,7 +53,7 @@ $(document).ready(function()  {
         $("#ruby").fadeIn();
       }else if (companySize === "largeCompany" && mobileApps === "proMobile" && forWho === "public") {
         $("#java").fadeIn();
-      }else if (forWho === "team" && mobileApps === "notMobile" && server === "serverside") {
+      }else if (forWho === "team" && server === "serverside") {
         $("#php").fadeIn();
       }else{
         $("#diverseIntrest").fadeIn();
