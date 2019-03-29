@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <form id="quizStart">
+      <form>
         <div class="radio">
           <h3>Would you rather design software for you and your team or for the public?</h3>
           <label>
@@ -24,22 +24,34 @@
             Public
           </label>
         </div>
-        <button type="submit" class="btn bg-success">Submit Answer</button>
+        <button id="quizStart" type="button" class="btn bg-success">Submit Answer</button>
       </form>
       <form class="hidden" id="quizLogic">
-        <div id="companySize"class="radio">
-          <h3>Would you rather work for a start-up or a larger company?</h3>
-          <label>
-            <input type="radio" name="companySize" value="team" checked>
-            Team
-          </label>
+        <div id="companySize">
+          <div class="radio">
+            <h3>Would you rather work for a start-up or a larger company?</h3>
+            <label>
+              <input type="radio" name="companySize" value="team" checked>
+              Start up
+            </label>
+            <label>
+              <input type="radio" name="companySize" value="team">
+              Large Company
+            </label>
+          </div>
         </div>
-        <div id="agency"class="radio">
-          <h3>Would you rather work with many clients on different projects at the same time?</h3>
-          <label>
-            <input type="radio" name="agency" value="team" checked>
-            Public
-          </label>
+        <div id="agency">
+          <div class="radio">
+            <h3>Would you rather work with many clients on different projects at the same time?</h3>
+            <label>
+              <input type="radio" name="agency" value="team" checked>
+              Yes please!
+            </label>
+            <label>
+              <input type="radio" name="agency" value="team">
+              No thank you!
+            </label>
+          </div>
         </div>
 
         <button type="submit" class="btn bg-success">Submit Answer</button>
