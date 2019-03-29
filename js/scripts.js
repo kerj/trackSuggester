@@ -1,5 +1,5 @@
 $(document).ready(function()  {
-  $("#cSharp,#ruby,#java,#php").hide();
+  $("#cSharp,#ruby,#java,#php,#diverseIntrest").hide();
   $("#quizStart").click(function()  {
      var start = $("input:radio[name=computer]:checked").val();
     if (start) {
@@ -46,6 +46,14 @@ $(document).ready(function()  {
     if (companySize && agency && server && mobileApps && forWho) {
       if (companySize === "largeCompany" && forWho === "team" && agency === "no") {
         $("#cSharp").show();
+      }else if (companySize === "startUp" && server === "ui") {
+        $("#ruby").show();
+      }else if (companySize === "largeCompany" && mobileApps === "proMobile" && forWho === "public") {
+        $("#java").show();
+      }else if (forWho === "team" && mobileApps === "notMobile" && server === "serverside") {
+        $("#php").show();
+      }else{
+        $("#diverseIntrest").show();
       }
     }
   });
