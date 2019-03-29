@@ -47,6 +47,7 @@ $(document).ready(function()  {
       alert("Please select an answer");
     };
     if (companySize && agency && server && mobileApps && forWho) {
+        var userName = $(prompt("Please enter your name."));
       if (companySize === "largeCompany" && forWho === "team" && agency === "no") {
         $("#cSharp").fadeIn();
       }else if (companySize === "startUp" && server === "ui") {
