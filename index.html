@@ -24,7 +24,7 @@
             Public
           </label>
         </div>
-        <button id="quizStart" type="button" class="btn bg-success">Submit Answer</button>
+        <button id="quizStart" type="button" class="btn bg-success">Begin Quiz!</button>
       </form>
       <form class="hidden" id="quizLogic">
         <div id="companySize">
@@ -44,12 +44,39 @@
           <div class="radio">
             <h3>Would you rather work with many clients on different projects at the same time?</h3>
             <label>
-              <input type="radio" name="agency" value="team" checked>
+              <input type="radio" name="agency" value="yes" checked>
               Yes please!
             </label>
             <label>
-              <input type="radio" name="agency" value="team">
+              <input type="radio" name="agency" value="no">
               No thank you!
+            </label>
+          </div>
+        </div>
+        
+        <div id="server">
+          <div class="radio">
+            <h3>Would you like to work with servers behind the scenes or with user interface more?</h3>
+            <label>
+              <input type="radio" name="servers" value="serverside" checked>
+              Behind the scenes is my style
+            </label>
+            <label>
+              <input type="radio" name="servers" value="ui">
+              User interface for me
+            </label>
+          </div>
+        </div>
+        <div id="mobileApps">
+          <div class="radio">
+            <h3>Would you want to design mobile apps?</h3>
+            <label>
+              <input type="radio" name="mobile" value="serverside" checked>
+              Mobiles all the way
+            </label>
+            <label>
+              <input type="radio" name="mobile" value="ui">
+              Nah
             </label>
           </div>
         </div>
