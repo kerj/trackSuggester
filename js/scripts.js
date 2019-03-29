@@ -1,5 +1,5 @@
 $(document).ready(function()  {
-  $("#result").hide();
+  $("#cSharp,#ruby,#java,#php").hide();
   $("#quizStart").click(function()  {
      var start = $("input:radio[name=forWho]:checked").val();
     if(start === "team"){
@@ -50,6 +50,6 @@ $(document).ready(function()  {
     }else{
       alert("Please select an answer");
     };
-    $("#result").show();
+    $("#cSharp").show();
   });
 });
