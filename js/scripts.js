@@ -16,6 +16,7 @@ $(document).ready(function()  {
       alert("Please select an answer");
     };
   });
+
   $("#quizLogic").submit(function(event) {
     event.preventDefault();
     var companySize = $("input:radio[name=companySize]:checked").val();
@@ -49,7 +50,7 @@ $(document).ready(function()  {
 
     if (companySize && agency && server && mobileApps && forWho) {
         var userName = prompt("Please enter your name.");
-        $("h1").prepend(userName + ", ")
+        $("h1").prepend(userName + ", ");
       if (companySize === "largeCompany" && forWho === "team" && agency === "no") {
         $("#cSharp").fadeIn();
       }else if (companySize === "startUp" && server === "ui") {
@@ -60,7 +61,7 @@ $(document).ready(function()  {
         $("#php").fadeIn();
       }else{
         $("#diverseIntrest").fadeIn();
-      }
-    }
+      };
+    };
   });
 });

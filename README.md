@@ -11,6 +11,7 @@ _The user will answer a set of questions to help narrow down the number of optio
 ## Setup/Installation Requirements
 
 * _clone repo from [Click here](https://github.com/kerj/trackSuggester)_
+* _Gh-pages link [Click here](https://kerj.github.io/trackSuggester/)_
 * _Requires internet connection to load bootstrap_
 
 
