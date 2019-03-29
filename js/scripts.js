@@ -1,5 +1,8 @@
 $(document).ready(function()  {
   $("#cSharp,#ruby,#java,#php,#diverseIntrest").hide();
+  $("button").click(function()  {
+    $("button").animate({letterSpacing: "+=5px"});
+  });
   $("#quizStart").click(function()  {
      var start = $("input:radio[name=computer]:checked").val();
     if (start) {
@@ -45,15 +48,15 @@ $(document).ready(function()  {
     };
     if (companySize && agency && server && mobileApps && forWho) {
       if (companySize === "largeCompany" && forWho === "team" && agency === "no") {
-        $("#cSharp").show();
+        $("#cSharp").fadeIn();
       }else if (companySize === "startUp" && server === "ui") {
-        $("#ruby").show();
+        $("#ruby").fadeIn();
       }else if (companySize === "largeCompany" && mobileApps === "proMobile" && forWho === "public") {
-        $("#java").show();
+        $("#java").fadeIn();
       }else if (forWho === "team" && mobileApps === "notMobile" && server === "serverside") {
-        $("#php").show();
+        $("#php").fadeIn();
       }else{
-        $("#diverseIntrest").show();
+        $("#diverseIntrest").fadeIn();
       }
     }
   });
