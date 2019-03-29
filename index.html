@@ -12,16 +12,14 @@
     <div class="container">
       <form>
         <div class="radio">
-          <h3>Would you rather design software for you and your team or for the public?</h3>
+          <h3>So... Mac or PC?</h3>
           <label>
-            <input type="radio" name="forWho" value="team">
-            Team
+            <input type="radio" name="computer" value="mac">
+            Mac
           </label>
-        </div>
-        <div class="radio">
           <label>
-            <input type="radio" name="forWho" value="public">
-            Public
+            <input type="radio" name="computer" value="pc">
+            PC
           </label>
         </div>
         <button id="quizStart" type="button" class="btn bg-success">Begin Quiz!</button>
@@ -80,16 +78,18 @@
             </label>
           </div>
         </div>
-        <div id="computerPref">
+        <div id="forWho">
           <div class="radio">
-            <h3>So... Mac or PC?</h3>
+            <h3>Would you rather design software for you and your team or for the public?</h3>
             <label>
-              <input type="radio" name="computer" value="proMobile">
-              Mac
+              <input type="radio" name="forWho" value="team">
+              Team
             </label>
+          </div>
+          <div class="radio">
             <label>
-              <input type="radio" name="computer" value="notMobile">
-              PC
+              <input type="radio" name="forWho" value="public">
+              Public
             </label>
           </div>
         </div>

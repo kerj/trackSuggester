@@ -1,23 +1,16 @@
 $(document).ready(function()  {
   $("#cSharp,#ruby,#java,#php").hide();
   $("#quizStart").click(function()  {
-     var start = $("input:radio[name=forWho]:checked").val();
-    if(start === "team"){
+     var start = $("input:radio[name=computer]:checked").val();
+    if (start) {
       $("#quizLogic").removeClass();
       $("#companySize").addClass("hidden");
       $("form:first-child").addClass("hidden");
       $("#server").addClass("hidden");
       $("#mobileApps").addClass("hidden");
-      $("#computerPref").addClass("hidden");
-    }else if (start != "team" && start != "public") {
-      alert("Please select an answer")
-    }else{
-      $("#quizLogic").removeClass();
-      $("#agency").addClass("hidden")
-      $("form:first-child").addClass("hidden");
-      $("#server").addClass("hidden");
-      $("#mobileApps").addClass("hidden");
-      $("#computerPref").addClass("hidden");
+      $("#forWho").addClass("hidden");
+    }else {
+      alert("Please select an answer");
     };
   });
   $("#quizLogic").submit(function(event) {
@@ -26,7 +19,7 @@ $(document).ready(function()  {
     var agency = $("input:radio[name=agency]:checked").val();
     var server = $("input:radio[name=servers]:checked").val();
     var mobileApps = $("input:radio[name=mobile]:checked").val();
-    var computerPref = $("input:radio[name=computer]:checked").val();
+    var forWho = $("input:radio[name=forWho]:checked").val();
 
     if (companySize && !mobileApps) {
       $("#companySize").hide();
@@ -43,13 +36,17 @@ $(document).ready(function()  {
     }else if (agency && mobileApps) {
       $("#mobileApps").hide();
       $("#agency").hide();
-      $("#computerPref").removeClass();
+      $("#forWho").removeClass();
     }else if (companySize && mobileApps) {
       $("#agency").removeClass();
       $("#mobileApps").hide();
     }else{
       alert("Please select an answer");
     };
-    $("#cSharp").show();
+    if (companySize && agency && server && mobileApps && forWho) {
+      if (companySize === "largeCompany" && forWho === "team" && agency === "no") {
+        $("#cSharp").show();
+      }
+    }
   });
 });
