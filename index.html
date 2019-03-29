@@ -10,26 +10,24 @@
   </head>
   <body>
     <div class="container">
-      <form id="quiz">
+      <form id="quizStart">
         <div class="radio">
           <h3>Would you rather design software for you and your team or for the public?</h3>
           <label>
-            <input type="radio" name="" value="" checked>
-
+            <input type="radio" name="forWho" value="team" checked>
+            Team
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="" value="">
-
+            <input type="radio" name="forWho" value="public">
+            Public
           </label>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="" value="">
-
-          </label>
-        </div>
+        <button type="submit" class="btn bg-success">Submit Answer</button>
+      </form>
+      <form id="quizLogic">
+        <!--will have the rest of the questions that will appear and hide based on the answers from user to eventually give the result  -->
       </form>
     </div>
 
