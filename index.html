@@ -14,7 +14,7 @@
         <div class="radio">
           <h3>Would you rather design software for you and your team or for the public?</h3>
           <label>
-            <input type="radio" name="forWho" value="team" checked>
+            <input type="radio" name="forWho" value="team">
             Team
           </label>
         </div>
@@ -31,11 +31,11 @@
           <div class="radio">
             <h3>Would you rather work for a start-up or a larger company?</h3>
             <label>
-              <input type="radio" name="companySize" value="team" checked>
+              <input type="radio" name="companySize" value="startUp">
               Start up
             </label>
             <label>
-              <input type="radio" name="companySize" value="team">
+              <input type="radio" name="companySize" value="largeCompany">
               Large Company
             </label>
           </div>
@@ -44,7 +44,7 @@
           <div class="radio">
             <h3>Would you rather work with many clients on different projects at the same time?</h3>
             <label>
-              <input type="radio" name="agency" value="yes" checked>
+              <input type="radio" name="agency" value="yes">
               Yes please!
             </label>
             <label>
@@ -53,12 +53,12 @@
             </label>
           </div>
         </div>
-        
+
         <div id="server">
           <div class="radio">
             <h3>Would you like to work with servers behind the scenes or with user interface more?</h3>
             <label>
-              <input type="radio" name="servers" value="serverside" checked>
+              <input type="radio" name="servers" value="serverside">
               Behind the scenes is my style
             </label>
             <label>
@@ -71,12 +71,25 @@
           <div class="radio">
             <h3>Would you want to design mobile apps?</h3>
             <label>
-              <input type="radio" name="mobile" value="serverside" checked>
-              Mobiles all the way
+              <input type="radio" name="mobile" value="proMobile">
+              Mobile all the way
             </label>
             <label>
-              <input type="radio" name="mobile" value="ui">
+              <input type="radio" name="mobile" value="notMobile">
               Nah
+            </label>
+          </div>
+        </div>
+        <div id="computerPref">
+          <div class="radio">
+            <h3>So... Mac or PC?</h3>
+            <label>
+              <input type="radio" name="computer" value="proMobile">
+              Mac
+            </label>
+            <label>
+              <input type="radio" name="computer" value="notMobile">
+              PC
             </label>
           </div>
         </div>
@@ -84,6 +97,12 @@
         <button type="submit" class="btn bg-success">Submit Answer</button>
         <!--will have the rest of the questions that will appear and hide based on the answers from user to eventually give the result  -->
       </form>
+      <div class="jumbotron" id="result">
+        <h1 id="cSharp">C# is your best fit</h1>
+        <h1 id="ruby">Ruby is your best fit</h1>
+        <h1 id="java">Java is your best fit</h1>
+        <h1 id="php">PHP is your best fit</h1>
+      </div>
     </div>
 
   </body>
